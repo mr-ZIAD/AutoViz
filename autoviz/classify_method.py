@@ -428,7 +428,7 @@ def data_cleaning_suggestions(df):
         dfx = data_suggestions(df)
         all_rows = dfx.shape[0]
         ax = dfx.head(all_rows).style.background_gradient(cmap='Reds').set_properties(**{'font-family': 'Segoe UI'})
-        display(ax);
+        return ax
     else:
         print("Input must be a dataframe. Please check input and try again.")
 ###################################################################################
